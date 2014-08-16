@@ -1,0 +1,41 @@
+/*doc
+---
+title: City Link
+name: cityLink
+category: Content
+---
+
+The City Link object styles a `<li>` element containing a link specifically used in the rendered autocomplete results of the search field.
+
+It was chosen to apply the selecting class to the `<li>` element instead of the `<a>` element so that sibling dependent styles can be easily applied.
+
+For this object to function correctly in the content of this city a `<a>` child is required.
+
+```
+<li class="cityLink">
+    <a href="#"><!-- Link Content--></a>
+</li>
+```
+
+```html_example
+<ul class="vList vList_clean">
+    <li class="cityLink">
+        <a href="#">Link Content</a>
+    </li>
+    <li class="cityLink">
+        <a href="#">Link Content</a>
+    </li>
+    <li class="cityLink">
+        <a href="#">Link Content</a>
+    </li>
+</ul>
+```
+*/
+.cityLink a {
+	display: block;
+	padding: 10px 14px;
+}
+
+.cityLink + .cityLink {
+	border-top: 1px solid $COLOR_LIGHT_GREY;
+}

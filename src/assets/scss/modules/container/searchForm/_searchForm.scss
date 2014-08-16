@@ -1,0 +1,73 @@
+/*doc
+---
+title: Search Form
+name: searchForm
+category: Container
+---
+
+Search Form is a container object which provides vertical rhythm for the search area.
+
+Because of the method chosen to display results, the Search Form object also styles the positioning of the results that are appended with Javascript.
+
+Class                           | Description
+------------------------------- | ----------------------------------------------------
+`.searchForm`                   | Base class.
+`.searchForm-hd`                | Child element, contains the title for the search
+`.searchForm-input`             | Child element, contains the input field.
+`.searchForm-input-results`     | Child element, in charge of positioning the results
+
+```
+<div class="searchForm">
+    <div class="search-hd">
+        <!-- Content here -->
+    </div>
+    <div class="searchForm-input">
+        <!-- Content Here -->
+        <div class="searchForm-input-results">
+            <!-- Content Here -->
+        </div>
+    </div>
+</div>
+```
+
+```html_example
+<div class="searchForm">
+    <div class="search-hd">
+        <h2 class="hdg hdg_1">Search For A City</h2>
+    </div>
+    <div class="searchForm-input">
+        <input class="input js-search" type="text" placeholder="Search For City (e.g. Austin, Texas) "/>
+        <div class="searchForm-input-results">
+            <ul class="vList vList_clean js-autocomplete">
+                <!-- Autocomplete Rendered Here -->
+            </ul>
+        </div>
+    </div>
+</div>
+```
+*/
+
+.searchForm {
+    @include clearfix();
+}
+
+.search-hd {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.searchForm-input {
+    position: relative;
+}
+
+.searchForm-input-results {
+    @include box-sizing(border-box);
+    width: 100%;
+    z-index: 75;
+    background-color: #ffffff;
+    border-bottom: 1px solid $COLOR_LIGHT_GREY;
+    border-right: 1px solid $COLOR_LIGHT_GREY;
+    border-left: 1px solid $COLOR_LIGHT_GREY;
+    position: absolute;
+    top: 44px;
+}

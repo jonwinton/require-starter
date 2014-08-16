@@ -1,0 +1,42 @@
+<div class="page">
+    <div class="wrapper">
+        <div class="box">
+            <div class="box-hd">
+                <h2 class="hdg hdg_1">About This Site</h2>
+            </div>
+            <div class="box-bd">
+                <div class="section">
+                    <h3 class="hdg hdg_3">Technologies</h3>
+                    <p>This was built with the following technologies:</p>
+                    <ul class="vList vList_bulleted">
+                        <li>Sass: because variables and mixins make life fun.</li>
+                        <li>RequireJS: used because it's awesome for dependency management writing object oriented Javascript</li>
+                        <li>Handlebars: Makes templating prettier and more readable.</li>
+                        <li>Grunt: using a build step is always awesome and you can use Grunt Includes for front-end templating</li>
+                        <li>Bower: package management is super sleek.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3 class="hdg hdg_3">CSS Architecture</h3>
+                    <p>I'm a big fan of a combination os OOCSS and SMACSS architeture styles. Files are divided between landmarks, container objects, content, layout directories.</p>
+                    <ul class="vList vList_bulleted">
+                        <li>Landmarks: occur consistently across every page.</li>
+                        <li>Content: styles content, such as text or inputs</li>
+                        <li>Container: act as wrappers for content, usually for providing vertical rhythm</li>
+                        <li>Layout: provide overall structure to a page or elements with a specific purpose.</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3 class="hdg hdg_3">JS Architecture</h3>
+                    <p>Javascript files use Require to handle inter-file dependency and are structured in the following directories that correspond with their purpose:</p>
+                    <ul class="vList vList_bulleted">
+                        <li>Controllers: overall controller for the app. Only one since this is a single page app and the no need for multiple controllers.</li>
+                        <li>Views: responsible for rendering the content onto the page</li>
+                        <li>Services: have a specific purpose, such as retrieving data from a server in this case. Services can be anything that you might want to call from any controller. Similar to Angular, in a way.</li>
+                        <li>Models: structure the data for use. Usually models only need to be called froma service which retrieves data, but they're not limited to that. Even if data is simple, using a model to strucutre the data ensures that any server side changes only require a change of one file and no others.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

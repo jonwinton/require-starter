@@ -1,0 +1,24 @@
+<script class="weatherTemplate" type="text/x-handlebars-template">
+    <div class="media media_centered media_stacked">
+        <div class="media-md">
+            <img src="{{iconUrl}}" alt="{{currentConditions}}">
+        </div>
+        <div class="media-bd">
+            <h3 class="hdg hdg_2">{{city}}, {{state}}</h3>
+            <div class="box">
+                <div class="box-hd">
+                    <h4 class="hdg hdg_3">Current Conditions</h4>
+                </div>
+                <div class="box-bd">
+                    <ul class="vList">
+                        <li>Currently: {{currentConditions}}</li>
+                        <li>Current Temp: {{currentTemp}}&#176;F</li>
+                        <li>Feels Like: {{feelsLike}}&#176;F</li>
+                        <li>Wind Speed: {{windSpeed}} mph</li>
+                        <li>Wind Direction: {{windDir}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

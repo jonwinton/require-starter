@@ -1,0 +1,69 @@
+/*doc
+---
+title: Media
+name: media
+category: Layout
+---
+
+The media block object is a common layout pattern seen throughout most websites over and over. For the most part, it consists of an image on the left, and descriptive content on the right. A key component of the media block object is that it is width agnostic and always flexes to fill the width of its container.
+
+Class                       | Description
+--------------------------- | ---------------------------------------------------------------
+`.media`                    | Base class.
+`.media_stacked`            | Extension that stacks the media and content.
+`.media-md`                 | Child element. Contains a media element (`img` or `video`) of any width.
+`.media-bd`                 | Child element. Creates a new block formatting context for it's content.
+
+```html_example
+<div class="media">
+    <div class="media-md">
+        <img src="//placehold.it/60x60" alt="" />
+    </div>
+    <div class="media-bd">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis, culpa. Tempore quam sed, repellendus porro dicta nesciunt facere quia molestiae amet ipsa, dolores adipisci saepe temporibus quod, eius nihil.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-md">
+        <img src="//placehold.it/160x90" alt="" />
+    </div>
+    <div class="media-bd">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis, culpa. Tempore quam sed, repellendus porro dicta nesciunt facere quia molestiae amet ipsa, dolores adipisci saepe temporibus quod, eius nihil.</p>
+    </div>
+</div>
+```
+
+## Media Stacked:
+
+```html_example
+<div class="media media_stacked">
+    <div class="media-md">
+        <img src="//placehold.it/400x200" alt="" />
+    </div>
+    <div class="media-bd">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quis, culpa. Tempore quam sed, repellendus porro dicta nesciunt facere quia molestiae amet ipsa, dolores adipisci saepe temporibus quod, eius nihil.</p>
+    </div>
+</div>
+```
+*/
+.media {
+    overflow: hidden;
+}
+
+.media_centered {
+    text-align: center;
+}
+
+.media_stacked .media-md {
+    float: none;
+    margin: 0 0 10px 0;
+}
+
+.media-md {
+    float:left;
+    margin: 0 10px 0 0;
+}
+
+.media-bd {
+    overflow: hidden; /* trigger block formatting context */
+}

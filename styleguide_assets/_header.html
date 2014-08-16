@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather App Styleguide</title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" href="assets/styles/screen.css">
+    <link rel="stylesheet" href="css/styleguide.css">
+  </head>
+  <body>
+    <div class="header" role="banner">
+        <div class="header-content">
+            <div class="header-content-wrapper">
+                <div class="header-content-wrapper-left">
+                    <div class="headerContent">
+                        <a href="/weather">
+                            <img src="assets/media/images/t3-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="headerContent">
+                        <a href="/weather">
+                            <h1 class="hdg hdg_3">Weather App</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-content-wrapper-right">
+                    <ul class="hList">
+                        <li>
+                            <a href="/weather/styleguide/index.html">Styleguide</a>
+                        </li>
+                        <li>
+                            <a href="/weather/about.html">About This Site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="section">
+        <div class="box">
+          <h2 class="hdg hdg_3">Categories</h2>
+          <nav>
+            <ul class="hList">
+            <% @categories.each do |category, file_name| %>
+              <li><a href="<%= file_name %>"><%= category %></a></li>
+            <% end %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <div class="box">
+            <h2 class="hdg hdg_3">Components</h2>
+            <ul class="hList">
+            <% @blocks.each do |b| %>
+              <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <% end %>
+            </ul>
+          </div>
+        </div>
+        <div class="box">

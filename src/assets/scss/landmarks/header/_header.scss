@@ -1,0 +1,86 @@
+/*doc
+---
+title: Header
+name: header
+category: Landmarks
+---
+
+The Header is a landmark object that is the first element on every page. It has two sections, a left and right, with content aligned to the left or right depending on which side the content is on.
+
+On mobile the header stacks with the left content on top and the right content below it. The content is aligned center on mobile as well.
+
+Class                           | Description
+------------------------------- | ----------------------------------------------------
+`.header`                       | Base class.
+`.header-content`               | Child element which applies proper width and spacing to content in the Header
+`.header-content-wrapper`       | Child element which wraps the content
+`.header-content-wrapper-left`  | Child element that contains content in the left side of the Header
+`.header-content-wrapper-right` | Child element that contains content in the right side of the Header
+
+```
+<div class="header" role="banner">
+    <div class="header-content">
+        <div class="header-content-wrapper">
+            <div class="header-content-wrapper-left">
+                <!-- Content Here -->
+            </div>
+            <div class="header-content-wrapper-right">
+                <!-- Content Here -->
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+```html_example
+<div class="header" role="banner">
+    <div class="header-content">
+        <div class="header-content-wrapper">
+            <div class="header-content-wrapper-left">
+                <div class="headerContent">
+                    <a href="/web">
+                        <img src="assets/media/images/t3-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="headerContent">
+                    <a href="/web">
+                        <h1 class="hdg hdg_3">Weather App</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="header-content-wrapper-right">
+                <div class="headerContent">
+                    <ul class="hList" role="navigation">
+                        <li>
+                            <a href="/web/styleguide/index.html">Styleguide</a>
+                        </li>
+                        <li>
+                            <a href="/web/about.html">About This Site</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+```
+*/
+
+.header {
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid $COLOR_RED;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    max-width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-content-wrapper-left {
+    padding: 5px 0;
+}

@@ -1,0 +1,32 @@
+/*doc
+---
+title: Header Content
+name: headerContent
+parent: header
+---
+
+Header Content is a container object that is a child object of the Header. It is responsible for aligning content horizontally and vertically centering content of varying heights.
+
+```
+<div class="headerContent">
+    <!-- Content Here -->
+</div>
+```
+
+```html_example
+<div class="headerContent">
+    <a href="/web">
+        <img src="assets/media/images/t3-logo.png" alt="">
+    </a>
+</div>
+```
+*/
+
+.headerContent {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headerContent img {
+    display: block;
+}

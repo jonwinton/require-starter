@@ -1,0 +1,40 @@
+// Clearfix
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+
+// Box Shadow
+@mixin box-shadow($top, $left, $blur, $color, $spread, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color $spread;
+    -moz-box-shadow:inset $top $left $blur $color $spread;
+    box-shadow:inset $top $left $blur $color $spread;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color $spread;
+    -moz-box-shadow: $top $left $blur $color $spread;
+    box-shadow: $top $left $blur $color $spread;
+  }
+}
+
+
+// Box Model
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+
+
+// One argument is accepted.
+@mixin appearance($argument) {
+    -webkit-appearance: $argument;
+    -moz-appearance: $argument;
+}

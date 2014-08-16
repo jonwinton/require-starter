@@ -1,0 +1,31 @@
+/*doc
+---
+title: Section
+name: section
+category: Layout
+---
+
+A Section is a vertical rhythm object. Each `.section` object pushes down, meaning it provides margin at the bottom it itself before the next object starts. Use this object to vertically separate large sections of a page.
+
+```
+<div class="section">
+    <!-- Content Here -->
+</div>
+```
+
+```html_example
+<div class="section">
+    Section 1 Content
+</div>
+<div class="section">
+    Section 2 Content
+</div>
+```
+
+
+*/
+
+.section {
+	@include clearfix();
+	margin-bottom: 40px;
+}

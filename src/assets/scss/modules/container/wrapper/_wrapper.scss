@@ -1,0 +1,22 @@
+/*doc
+---
+title: Wrapper
+name: wrapper
+category: Container
+---
+
+The Wrapper object is used to center content within the viewport and provide padding from the left and right edges of the viewport.
+
+```html_example
+<div class="wrapper">
+	<!-- Content here. -->
+</div>
+```
+*/
+
+.wrapper {
+	max-width: 980px;
+	padding: 0 10px;
+	margin: 0 auto;
+	@include clearfix();
+}
