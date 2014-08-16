@@ -8,8 +8,8 @@
 /build-reports/
 build-env.js
 /src/robots.txt
+/src/assets/vendor/
 /node_modules/
 npm-debug.log
-/tools/node/
 /web/
 /styleguide/
