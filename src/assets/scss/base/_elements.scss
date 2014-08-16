@@ -1,19 +1,10 @@
 body {
-	font-family: $FONT_OPEN;
-	color: $COLOR_DEFAULT;
 	font-size: $FONT_SIZE_DEFAULT;
 	line-height: 1.4;
-	background-color: $COLOR_LIGHT_GREY;
 }
 
 a {
-	color: $COLOR_RED;
 	text-decoration: none;
-}
-
-p {
-    min-height: 1px;
-    margin-bottom: 10px;
 }
 
 img {
