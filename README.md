@@ -1,4 +1,4 @@
-# Run The Weather App
+# Setup
 
     1. Start up a local server. Recommend [Fenix](http://fenixwebserver.com/), but MAMP or XAMP are cool too.
 
